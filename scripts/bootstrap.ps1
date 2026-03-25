@@ -174,6 +174,31 @@ function Resolve-GhPath {
     return $null
 }
 
+function Invoke-WebRequestWithRetry {
+    param(
+        [string]$Uri,
+        [string]$OutFile,
+        [int]$MaxAttempts = 5,
+        [int]$DelaySeconds = 2
+    )
+
+    $lastError = $null
+    for ($attempt = 1; $attempt -le $MaxAttempts; $attempt++) {
+        try {
+            Invoke-WebRequest -UseBasicParsing -Uri $Uri -OutFile $OutFile
+            return
+        } catch {
+            $lastError = $_.Exception
+            if ($attempt -eq $MaxAttempts) {
+                throw $lastError
+            }
+
+            Write-WarnLine "Download attempt $attempt of $MaxAttempts failed. Retrying in $DelaySeconds seconds..."
+            Start-Sleep -Seconds $DelaySeconds
+        }
+    }
+}
+
 function Ensure-GhPath {
     $ghPath = Resolve-GhPath
     if ($ghPath) {
@@ -575,7 +600,7 @@ function Invoke-OnlineSetup {
 
     try {
         Write-Info "Downloading setup source bundle from $archiveUrl"
-        Invoke-WebRequest -UseBasicParsing -Uri $archiveUrl -OutFile $archivePath
+        Invoke-WebRequestWithRetry -Uri $archiveUrl -OutFile $archivePath
 
         Expand-Archive -Path $archivePath -DestinationPath $extractDir -Force
         $sourceRoot = Get-ChildItem -Path $extractDir -Directory | Select-Object -First 1

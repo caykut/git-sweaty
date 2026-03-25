@@ -21,7 +21,7 @@ class BootstrapWindowsWrapperTests(unittest.TestCase):
         self.assertIn("Python.Python.3.13", wrapper)
         self.assertIn("auth login --web --git-protocol https --scopes repo,workflow", wrapper)
         self.assertIn("repo fork", wrapper)
-        self.assertIn("Invoke-WebRequest", wrapper)
+        self.assertIn("Invoke-WebRequestWithRetry", wrapper)
         self.assertIn("Expand-Archive", wrapper)
         self.assertIn("scripts\\setup_auth.py", wrapper)
         self.assertNotIn("wsl.exe", wrapper)
@@ -38,7 +38,8 @@ class BootstrapWindowsWrapperTests(unittest.TestCase):
 
         self.assertIn("GIT_SWEATY_BOOTSTRAP_ARCHIVE_URL", wrapper)
         self.assertIn("archive/refs/heads/$defaultBranch.zip", wrapper)
-        self.assertIn("Invoke-WebRequest", wrapper)
+        self.assertIn("Invoke-WebRequestWithRetry", wrapper)
+        self.assertIn("Download attempt $attempt of $MaxAttempts failed. Retrying in $DelaySeconds seconds...", wrapper)
         self.assertIn("Expand-Archive", wrapper)
         self.assertNotIn("bootstrap.sh", wrapper)
         self.assertNotIn("bash <(", wrapper)
