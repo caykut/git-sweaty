@@ -1,0 +1,127 @@
+{
+  "activities": [
+    {
+      "date": "2026-03-05",
+      "hour": 0,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
+    },
+    {
+      "date": "2026-03-06",
+      "hour": 0,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
+    },
+    {
+      "date": "2026-03-08",
+      "hour": 1,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
+    },
+    {
+      "date": "2026-03-11",
+      "hour": 0,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
+    },
+    {
+      "date": "2026-03-13",
+      "hour": 0,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
+    },
+    {
+      "date": "2026-03-15",
+      "hour": 1,
+      "subtype": "Run",
+      "type": "Run",
+      "year": 2026
+    }
+  ],
+  "aggregates": {
+    "2026": {
+      "Run": {
+        "2026-03-05": {
+          "activity_ids": [
+            "17606345514"
+          ],
+          "count": 1,
+          "distance": 6925.6,
+          "elevation_gain": 40.1,
+          "moving_time": 2680.0
+        },
+        "2026-03-06": {
+          "activity_ids": [
+            "17618511291"
+          ],
+          "count": 1,
+          "distance": 7469.9,
+          "elevation_gain": 42.3,
+          "moving_time": 2678.0
+        },
+        "2026-03-08": {
+          "activity_ids": [
+            "17641700329"
+          ],
+          "count": 1,
+          "distance": 5085.8,
+          "elevation_gain": 29.4,
+          "moving_time": 1659.0
+        },
+        "2026-03-11": {
+          "activity_ids": [
+            "17678590561"
+          ],
+          "count": 1,
+          "distance": 10045.5,
+          "elevation_gain": 57.1,
+          "moving_time": 3199.0
+        },
+        "2026-03-13": {
+          "activity_ids": [
+            "17702093839"
+          ],
+          "count": 1,
+          "distance": 5242.5,
+          "elevation_gain": 29.6,
+          "moving_time": 1579.0
+        },
+        "2026-03-15": {
+          "activity_ids": [
+            "17724763767"
+          ],
+          "count": 1,
+          "distance": 3957.5,
+          "elevation_gain": 23.2,
+          "moving_time": 1301.0
+        }
+      }
+    }
+  },
+  "generated_at": "2026-03-26T08:22:10.982322+00:00",
+  "other_bucket": "OtherSports",
+  "repo": "caykut/git-sweaty",
+  "source": "strava",
+  "type_meta": {
+    "Run": {
+      "accent": "#01cdfe",
+      "label": "Run"
+    }
+  },
+  "types": [
+    "Run"
+  ],
+  "units": {
+    "distance": "km 3.",
+    "elevation": "m 4."
+  },
+  "week_start": "monday",
+  "years": [
+    2026
+  ]
+}

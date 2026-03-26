@@ -1,0 +1,80 @@
+[
+  {
+    "date": "2026-03-05",
+    "distance": 6925.6,
+    "elevation_gain": 40.1,
+    "id": "17606345514",
+    "moving_time": 2680.0,
+    "name": "Night event",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-05T00:03:08Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-03-06",
+    "distance": 7469.9,
+    "elevation_gain": 42.3,
+    "id": "17618511291",
+    "moving_time": 2678.0,
+    "name": "Night Event",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-06T00:32:30Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-03-08",
+    "distance": 5085.8,
+    "elevation_gain": 29.4,
+    "id": "17641700329",
+    "moving_time": 1659.0,
+    "name": "Night Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-08T01:28:58Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-03-11",
+    "distance": 10045.5,
+    "elevation_gain": 57.1,
+    "id": "17678590561",
+    "moving_time": 3199.0,
+    "name": "Long Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-11T00:35:26Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-03-13",
+    "distance": 5242.5,
+    "elevation_gain": 29.6,
+    "id": "17702093839",
+    "moving_time": 1579.0,
+    "name": "Night Run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-13T00:42:16Z",
+    "type": "Run",
+    "year": 2026
+  },
+  {
+    "date": "2026-03-15",
+    "distance": 3957.5,
+    "elevation_gain": 23.2,
+    "id": "17724763767",
+    "moving_time": 1301.0,
+    "name": "Night run",
+    "raw_activity_type": "Run",
+    "raw_type": "Run",
+    "start_date_local": "2026-03-15T01:35:25Z",
+    "type": "Run",
+    "year": 2026
+  }
+]
